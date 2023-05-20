@@ -52,13 +52,14 @@
 # B3 STRUCT and UNION
 STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ## **Từng phần tử của STRUCT sẽ có địa chỉ riêng, có thể dùng nhiều biến trong Struct cùng lúc**
-### **Struct khi chạy được lưu vào bộ nhớ Stack trên RAM** 
+### **_Struct khi chạy được lưu vào bộ nhớ Stack trên RAM_** 
 	
-struct Exam{
-  uint8_t X1[10]; // Mất 2 lần quét tạo ra 2 lần 8 byte, 8 byte cuối lần 2 sẽ dư ra 6 byte gọi là bộ nhớ đệm
-  uint64_t X2[5]; // Bộ nhớ Đệm không nhỏ hơn lần quét tiếp cần có thì sẽ tạo ra 8 byte mới, nếu nhỏ hơn hoặc bẳng sẽ dùng bô nhớ Đệm.
-  uint32_t X3[6]; // Kiểu u32 lỗi lần quét mất 4 byte, đây cần tạo 3 lần 8 byte
-};
-/* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
- Cách tính Bộ Nhớ 
+	struct Exam{
+	  uint8_t X1[10]; // Mất 2 lần quét tạo ra 2 lần 8 byte, 8 byte cuối lần 2 sẽ dư ra 6 byte gọi là bộ nhớ đệm
+	  uint64_t X2[5]; // Bộ nhớ Đệm không nhỏ hơn lần quét tiếp cần có thì sẽ tạo ra 8 byte mới, nếu nhỏ hơn hoặc bẳng sẽ dùng bô nhớ Đệm.
+	  uint32_t X3[6]; // Kiểu u32 lỗi lần quét mất 4 byte, đây cần tạo 3 lần 8 byte
+	  //Bộ nhớ của kiểu Struct trên là 80 Byte
+	}EX;
+	/* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
+ 
 
