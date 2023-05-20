@@ -45,7 +45,6 @@
 ## **XOR: x = y ^ z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/964b9a8f-ad3f-45ee-8f7a-f443c02501ce)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/9ba37c61-a5ed-4b6b-a566-b853a02edc0c)
-![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
+
 ## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
-	![Uploading image.png…]()
-	
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
