@@ -50,10 +50,10 @@
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
 
 # B3 STRUCT and UNION
-	**_ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
+	STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ## **Từng phần tử của STRUCT sẽ có địa chỉ riêng, có thể dùng nhiều biến trong Struct cùng lúc**
 ### **Struct khi chạy được lưu vào bộ nhớ Stack trên RAM** 
-'''c
+	
 struct Exam{
   uint8_t X1[10]; // Mất 2 lần quét tạo ra 2 lần 8 byte, 8 byte cuối lần 2 sẽ dư ra 6 byte gọi là bộ nhớ đệm
   uint64_t X2[5]; // Bộ nhớ Đệm không nhỏ hơn lần quét tiếp cần có thì sẽ tạo ra 8 byte mới, nếu nhỏ hơn hoặc bẳng sẽ dùng bô nhớ Đệm.
@@ -61,4 +61,4 @@ struct Exam{
 };
 /* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
  Cách tính Bộ Nhớ 
-'''
+
