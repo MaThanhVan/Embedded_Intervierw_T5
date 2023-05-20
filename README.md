@@ -35,5 +35,16 @@
 # B2 THAO TÁC BIT
 ## **AND:** x=y & z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/21bf003d-e9c8-4536-a05e-d94fb34df11b)
-
-
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/0b9a1154-2070-471b-a158-ce496e916d80)
+## **NOT:** x=~y;
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/7dcfee9e-3ac0-47d7-932c-d0b1c0e99c16)
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/a3aba9b8-a46a-4a59-9407-135d22a8bcc6)
+## **OR:** x=y | z;
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/6df28a9a-6518-4481-b52a-32614e15b9c8)
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/f370c912-3b8b-49d6-bbec-236c4ebe23e5)
+## **XOR:![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/964b9a8f-ad3f-45ee-8f7a-f443c02501ce) x = y ^ z;
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/9ba37c61-a5ed-4b6b-a566-b853a02edc0c)
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
+## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
+	![Uploading image.png…]()
+	
