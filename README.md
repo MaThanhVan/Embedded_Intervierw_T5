@@ -50,7 +50,7 @@
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
 
 # B3 STRUCT and UNION
-	STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
+STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ## **Từng phần tử của STRUCT sẽ có địa chỉ riêng, có thể dùng nhiều biến trong Struct cùng lúc**
 ### **Struct khi chạy được lưu vào bộ nhớ Stack trên RAM** 
 	
