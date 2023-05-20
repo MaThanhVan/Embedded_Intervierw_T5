@@ -42,7 +42,8 @@
 ## **OR:** x=y | z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/6df28a9a-6518-4481-b52a-32614e15b9c8)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/f370c912-3b8b-49d6-bbec-236c4ebe23e5)
-## **XOR:![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/964b9a8f-ad3f-45ee-8f7a-f443c02501ce) x = y ^ z;
+## **XOR: x = y ^ z;
+![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/964b9a8f-ad3f-45ee-8f7a-f443c02501ce)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/9ba37c61-a5ed-4b6b-a566-b853a02edc0c)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
 ## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
