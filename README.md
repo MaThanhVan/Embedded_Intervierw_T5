@@ -61,5 +61,51 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	  //Bộ nhớ của kiểu Struct trên là 80 Byte
 	}EX;
 	/* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
- 
+ ## **UNION** Union 
+ Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô nhớ bằng member lớn nhât trong nó
+ 	typedef union 
+{
+    uint8_t a;
+    uint8_t b;
+    uint8_t c;
+}Data;
 
+void hienthi( Data data){
+    printf("a = %d, b = %d, c = %d", data.a, data.b, data.c);
+}
+
+int main()
+{
+   Data data;
+   data.a = 25;
+   data.b = 12;
+   data.c = 65;
+
+   hienthi(data);
+}//ket qua {a = 65, b = 65, c = 65}
+
+ #Static
+ #Con trỏ
+ ##Con Trỏ NULL
+ ##
+ Con trỏ chỉ lưu địa chỉ có giá trị cùng kiểu dữ liệu với con trỏ.
+ ## Con trỏ Hàm
+ 	void tong(int a,int b){
+		printf("tong %d va %d = %d\n", a, b, a+b);
+	}
+	int main()
+	{
+		void (*ptr_phepToan)(int a, int b) = NUL;
+		prt_phepToan = &tong;
+		ptr_phepToan 
+
+## Con Trỏ Void
+	int main()
+	{
+		
+	}
+	
+## Pointer to Pointer
+### là một con trỏ lưu địa chỉ con trỏ trước
+	char *aray = "hello";
+	char arr
