@@ -32,7 +32,40 @@
 - ***Heap:*** Quyền truy cập là Read-Write.
 	- Được sử dụng để cấp phát bộ nhớ động như: Malloc, Calloc,...
 	- Sẽ được giải phóng khi gọi hàm free,...
-# B2 THAO TÁC BIT
+
+# B2 MACRO
+## **Macro**
+   - Được xử lý bởi preprocessor(Tiền xử lý)
+   - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
+   - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack counter và propram counter trỏ đến chương trình, Hàm Macro sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
+	#define SUM(a, b) a+b
+	int main()
+	{
+		printf("Tong a va b = %d\n", SUM(4, 7));
+	}
+  ***Macro Funtion***
+  	#define CREATE_FUNC(ten_ham, noi_dung)	\
+	void ten_ham(){				\
+		printf("%s\n", noi_dung);		\
+	}
+	CREATE_FUNC(test, "this is test")
+	\*tao ra mot ham 
+	void tets(){
+		printf("%s\n", "this is test");
+		}*/
+## **inline** 
+- Size của file chương trình chứa **inline** sẽ lớn hơn các chương trình khác nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack pointer và propram couter trỏ đến chương trình.
+-  Hàm **inline** sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
+
+	inline void test(int a, int b){
+		return a+b;
+	}//0xc4 0xc5 mã máy, vdk sẽ hiểu
+	int main()
+	{
+		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
+		return 0;
+	}
+# B3 THAO TÁC BIT
 ## **AND:** x=y & z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/21bf003d-e9c8-4536-a05e-d94fb34df11b)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/0b9a1154-2070-471b-a158-ce496e916d80)
@@ -61,8 +94,8 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	  //Bộ nhớ của kiểu Struct trên là 80 Byte
 	}EX;
 	/* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
- ## **UNION** 
-Union Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô nhớ union bằng member lớn nhất trong nó
+ ## **Union** 
+**_Union Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô nhớ union bằng member lớn nhất trong nó**
 	'''c
 	typedef union 
 	{
@@ -85,10 +118,33 @@ Union Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô n
 	   hienthi(data);
 	}//ket qua {a = 65, b = 65, c = 65}
 	'''
-#Static
-#Con trỏ
-##Con Trỏ NULL
- ##
+
+# B4 Static and Pointer
+
+## Static
+   - Biến **Static** khởi tạo một lần và sẽ tồn tại hết vòng đời của chương trình.
+   - Biến static cục bộ chỉ có thể sử dụng trong **pham vi hàm chứa nó** và nếu biến static toàn cục chỉ sử dụng được trong file đó.
+  	void test(){
+   		static int a = 10;
+		printf("a = %d\n", a);
+		a++;
+  	}
+	int main()
+	{
+		test();
+		test();
+		test();
+	}//KQ a = 10 / a = 11 / a = 12; 
+	//Không có static KQ = 10 hết. 
+# Pointer and Pointer to Pointer
+## Pointer
+    - Khai báo con trỏ
+    	int *ptr; // Khai báo như các biến bình thường nhưng thêm dấu * 
+	// chưa gán địa chỉ nó sẽ sử dụng một địa chỉ rác. 
+	// Khi khai báo một con trỏ Nên khai báo cho nó một địa chỉ như NUL, để tránh bị lỗi chương trình.
+	int *ptr = NULL;
+ 	//Con trỏ NUL là con trỏ có giá trị = 0 và địa chỉ = 0;
+	// Khi không sử dụng một con trỏ cũng nên gán cho nó bằng con trỏ NUL
  Con trỏ chỉ lưu địa chỉ có giá trị cùng kiểu dữ liệu với con trỏ.
  ## Con trỏ Hàm
  	void tong(int a,int b){
