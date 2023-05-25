@@ -45,7 +45,8 @@
 		printf("Tong a va b = %d\n", SUM(4, 7));
 	}
   ***Macro Funtion***
-	#define CREATE_FUNC(ten_ham, noi_dung)	\
+  
+  	#define CREATE_FUNC(ten_ham, noi_dung)	\
 	void ten_ham(){				\
 		printf("%s\n", noi_dung);		\
 	}
@@ -54,6 +55,7 @@
 	void tets(){
 		printf("%s\n", "this is test");
 	}*/
+	
 ## **inline** 
 - Size của file chương trình chứa **inline** sẽ lớn hơn các chương trình khác nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack pointer và propram couter trỏ đến chương trình.
 -  Hàm **inline** sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
@@ -66,6 +68,8 @@
 		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
 		return 0;
 	}
+
+	
 # B3 THAO TÁC BIT
 ## **AND:** x=y & z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/21bf003d-e9c8-4536-a05e-d94fb34df11b)
