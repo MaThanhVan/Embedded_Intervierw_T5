@@ -38,6 +38,7 @@
    - Được xử lý bởi preprocessor(Tiền xử lý)
    - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
    - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack counter và propram counter trỏ đến chương trình, Hàm Macro sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
+  	'''c
 	#define SUM(a, b) a+b
 	int main()
 	{
