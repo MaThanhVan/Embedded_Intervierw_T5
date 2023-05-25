@@ -84,7 +84,7 @@ Union Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô n
 
 	   hienthi(data);
 	}//ket qua {a = 65, b = 65, c = 65}
-	'''c
+	'''
 #Static
 #Con trỏ
 ##Con Trỏ NULL
