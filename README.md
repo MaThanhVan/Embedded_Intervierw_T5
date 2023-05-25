@@ -61,9 +61,9 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	  //Bộ nhớ của kiểu Struct trên là 80 Byte
 	}EX;
 	/* Bộ nhớ mỗi lần quét sẽ được tính theo kiểu dữ liệu lớn nhất trong struct. Như trên mỗi lần quét là 8 byte 
- ## **UNION** Union 
- Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô nhớ bằng member lớn nhât trong nó
- 	typedef union 
+ ## **UNION** 
+Union Sử Dụng Địa chỉ dùng chung cho các member bên trong nó, Bô nhớ union bằng member lớn nhất trong nó
+		 	typedef union 
 {
     uint8_t a;
     uint8_t b;
