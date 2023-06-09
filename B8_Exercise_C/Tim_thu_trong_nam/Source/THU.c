@@ -7,4 +7,6 @@
 
 #include "THU.h"
 
-void 
+void thuTrongNam(char *arr){
+
+}
