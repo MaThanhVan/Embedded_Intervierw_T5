@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "algorithm": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "string": "c",
+        "functional": "c",
+        "limits": "c",
+        "memory": "c"
     }
 }
