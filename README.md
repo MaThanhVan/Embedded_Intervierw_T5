@@ -43,11 +43,11 @@
 		- Heap: kích thước của bộ nhớ Heap là không cố định, có thể tăng giảm do đó đáp ứng được nhu cầu lưu trữ dữ liệu của chương trình.
 	- Đặc điểm vùng nhớ
 		- Stack: vùng nhớ Stack được quản lý bởi hệ điều hành, dữ liệu được lưu trong Stack sẽ tự động hủy khi hàm thực hiện xong công việc của mình.
-		- Heap: Vùng nhớ Heap được quản lý bởi lập trình viên (trong C hoặc C++), dữ liệu trong Heap sẽ không bị hủy khi hàm thực hiện xong, điều đó có nghĩa bạn phải tự tay hủy vùng nhớ bằng câu lệnh free (trong C), và delete hoặc delete [] (trong C++), nếu không sẽ xảy ra hiện tượng rò rỉ bộ nhớ. 
-
+		- Heap: Vùng nhớ Heap được quản lý bởi lập trình viên (trong C hoặc C++), dữ liệu trong Heap sẽ không bị hủy khi hàm thực hiện xong, điều đó có nghĩa bạn phải tự tay hủy vùng nhớ bằng câu lệnh free (trong C), và delete hoặc delete [] (trong C++), nếu không sẽ xảy ra hiện tượng rò rỉ bộ nhớ.
+   </details>
 <details>
-  <summary><h2>▶B2 Macro, Inline, Function</h2></summary>
-## **Macro**
+  <summary><h1>▶B2 Macro, Inline, Function</h1></summary>
+### **Macro**
    - Được xử lý bởi preprocessor(Tiền xử lý)
    - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
    - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack counter và propram counter trỏ đến chương trình, Hàm Macro sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
@@ -81,7 +81,9 @@
 	{
 		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
 		return 0;
+
 	}
+</details>
 <details>
   <summary><h2>▶B3 THAO TÁC BIT</h2></summary>
 
@@ -100,7 +102,7 @@
 
 ## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
-
+</details>
 <details>
   <summary><h2>▶B4 STRUCT and UNION</h2></summary>
 
@@ -139,7 +141,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	   hienthi(data);
 	}//ket qua {a = 65, b = 65, c = 65}
 	'''
-
+</details>
 <details>
   <summary><h2>▶B5 Static and Pointer</h2></summary>
 
@@ -190,7 +192,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ### là một con trỏ lưu địa chỉ con trỏ trước
 	char *aray = "hello";
 	char arr
-
+</details>
 <details>
   <summary><h2>▶B6 C++</h2></summary>
 
