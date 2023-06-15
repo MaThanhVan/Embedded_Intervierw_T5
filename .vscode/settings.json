@@ -5,6 +5,8 @@
         "string": "c",
         "functional": "c",
         "limits": "c",
-        "memory": "c"
+        "memory": "c",
+        "iostream": "cpp",
+        "sstream": "cpp"
     }
 }
