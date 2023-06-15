@@ -44,10 +44,9 @@
 	- Đặc điểm vùng nhớ
 		- Stack: vùng nhớ Stack được quản lý bởi hệ điều hành, dữ liệu được lưu trong Stack sẽ tự động hủy khi hàm thực hiện xong công việc của mình.
 		- Heap: Vùng nhớ Heap được quản lý bởi lập trình viên (trong C hoặc C++), dữ liệu trong Heap sẽ không bị hủy khi hàm thực hiện xong, điều đó có nghĩa bạn phải tự tay hủy vùng nhớ bằng câu lệnh free (trong C), và delete hoặc delete [] (trong C++), nếu không sẽ xảy ra hiện tượng rò rỉ bộ nhớ. 
-
 <details>
   <summary><h2>▶B2 Macro, Inline, Function</h2></summary>
-## **Macro**
+### **Macro**
    - Được xử lý bởi preprocessor(Tiền xử lý)
    - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
    - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack counter và propram counter trỏ đến chương trình, Hàm Macro sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
