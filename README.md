@@ -46,7 +46,7 @@
 		- Heap: Vùng nhớ Heap được quản lý bởi lập trình viên (trong C hoặc C++), dữ liệu trong Heap sẽ không bị hủy khi hàm thực hiện xong, điều đó có nghĩa bạn phải tự tay hủy vùng nhớ bằng câu lệnh free (trong C), và delete hoặc delete [] (trong C++), nếu không sẽ xảy ra hiện tượng rò rỉ bộ nhớ. 
 
 <details>
-  <summary><h2>▶Macro, Inline, Function</h2></summary>
+  <summary><h2>▶B2 Macro, Inline, Function</h2></summary>
 ## **Macro**
    - Được xử lý bởi preprocessor(Tiền xử lý)
    - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
@@ -82,7 +82,9 @@
 		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
 		return 0;
 	}
-# B3 THAO TÁC BIT
+<details>
+  <summary><h2>▶B3 THAO TÁC BIT</h2></summary>
+
 ## **AND:** x=y & z;
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/21bf003d-e9c8-4536-a05e-d94fb34df11b)
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/0b9a1154-2070-471b-a158-ce496e916d80)
@@ -99,7 +101,9 @@
 ## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
 
-# B3 STRUCT and UNION
+<details>
+  <summary><h2>▶B4 STRUCT and UNION</h2></summary>
+
 STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ## **Từng phần tử của STRUCT sẽ có địa chỉ riêng, có thể dùng nhiều biến trong Struct cùng lúc**
 ### **_Struct khi chạy được lưu vào bộ nhớ Stack trên RAM_** 
@@ -136,7 +140,8 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	}//ket qua {a = 65, b = 65, c = 65}
 	'''
 
-# B4 Static and Pointer
+<details>
+  <summary><h2>▶B5 Static and Pointer</h2></summary>
 
 ## Static
    - Biến **Static** khởi tạo một lần và sẽ tồn tại hết vòng đời của chương trình.
@@ -164,6 +169,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	// Khi không sử dụng một con trỏ cũng nên gán cho nó bằng con trỏ NUL
  Con trỏ chỉ lưu địa chỉ có giá trị cùng kiểu dữ liệu với con trỏ.
  ## Con trỏ Hàm
+	'''c
  	void tong(int a,int b){
 		printf("tong %d va %d = %d\n", a, b, a+b);
 	}
@@ -172,7 +178,8 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 		void (*ptr_phepToan)(int a, int b) = NUL;
 		prt_phepToan = &tong;
 		ptr_phepToan 
-
+	}
+	'''
 ## Con Trỏ Void
 	int main()
 	{
@@ -183,3 +190,33 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ### là một con trỏ lưu địa chỉ con trỏ trước
 	char *aray = "hello";
 	char arr
+
+<details>
+  <summary><h2>▶B6 C++</h2></summary>
+
+## CLASS
+- Cấu trúc của class:
+	'''c
+	#include <iostream>
+	using namespace std;
+	class SinhVien{
+		private:		//chỉ có class truy cập đến các member trong private
+			int tuoi;		// day goi la property
+			int lop;
+		public:
+			
+			void hienThi();	/* day goi la method, có thể viết chương trình trong method */
+	}
+
+	void SinhVien::hienThi(){
+
+	}
+
+	int main()
+	{
+		SinhVien sv, sv2; // Class SinhVen, object la sv và sv 2, có địa chỉ khác nhau, object chi truy cap den pham vi trong public.
+		return 0;
+	}
+	'''
+
+
