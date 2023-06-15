@@ -81,7 +81,9 @@
 	{
 		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
 		return 0;
+
 	}
+</details>
 <details>
   <summary><h2>▶B3 THAO TÁC BIT</h2></summary>
 
@@ -100,7 +102,7 @@
 
 ## **Dịch Bit: >> (Dịch phải) và << ( Dịch trái )
 ![image](https://github.com/MaThanhVan/Embedded_Intervierw_T5/assets/119687191/affb5af4-cca3-4a19-ad49-ac2c458fad57)
-
+</details>
 <details>
   <summary><h2>▶B4 STRUCT and UNION</h2></summary>
 
@@ -139,7 +141,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 	   hienthi(data);
 	}//ket qua {a = 65, b = 65, c = 65}
 	'''
-
+</details>
 <details>
   <summary><h2>▶B5 Static and Pointer</h2></summary>
 
@@ -190,7 +192,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ### là một con trỏ lưu địa chỉ con trỏ trước
 	char *aray = "hello";
 	char arr
-
+</details>
 <details>
   <summary><h2>▶B6 C++</h2></summary>
 
