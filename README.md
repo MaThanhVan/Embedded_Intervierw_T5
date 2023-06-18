@@ -198,7 +198,7 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 
 ## CLASS
 - Cấu trúc của class:
-	'''c
+	
 			#include <iostream>
 			using namespace std;
 			class SinhVien{
@@ -219,6 +219,6 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 				SinhVien sv, sv2; // Class SinhVen, object la sv và sv 2, có địa chỉ khác nhau, object chi truy cap den pham vi trong public.
 				return 0;
 			}
-	'''
+	
 
 
