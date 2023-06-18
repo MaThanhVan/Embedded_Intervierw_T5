@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+/*
+Tinh Đóng gói: property phải khai báo vào trong private, khi lấy giá trị ra phải thông qua method
+*/
 class SinhVien{
    // private:		//chỉ có class truy cập đến các member trong private
     protected:      //giống private nhưng giúp các class con có thể truy cập vào các property bên trong

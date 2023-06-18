@@ -199,26 +199,26 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 ## CLASS
 - Cấu trúc của class:
 	'''c
-	#include <iostream>
-	using namespace std;
-	class SinhVien{
-		private:		//chỉ có class truy cập đến các member trong private
-			int tuoi;		// day goi la property
-			int lop;
-		public:
-			
-			void hienThi();	/* day goi la method, có thể viết chương trình trong method */
-	}
+			#include <iostream>
+			using namespace std;
+			class SinhVien{
+				private:		//chỉ có class truy cập đến các member trong private
+					int tuoi;		// day goi la property
+					int lop;
+				public:
+					
+					void hienThi();	/* day goi la method, có thể viết chương trình trong method */
+			}
 
-	void SinhVien::hienThi(){
+			void SinhVien::hienThi(){
 
-	}
+			}
 
-	int main()
-	{
-		SinhVien sv, sv2; // Class SinhVen, object la sv và sv 2, có địa chỉ khác nhau, object chi truy cap den pham vi trong public.
-		return 0;
-	}
+			int main()
+			{
+				SinhVien sv, sv2; // Class SinhVen, object la sv và sv 2, có địa chỉ khác nhau, object chi truy cap den pham vi trong public.
+				return 0;
+			}
 	'''
 
 
