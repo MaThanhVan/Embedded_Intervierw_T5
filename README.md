@@ -198,7 +198,14 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 
 ## CLASS
 - Cấu trúc của class:
-	
+Class là một mô tả trừu tượng (abstract) của nhóm các đối tượng (object) có 
+cùng bản chất, ngược lại mỗi một đối tượng là một thể hiện cụ thể (instance) cho 
+những mô tả trừu tượng đó. Một class trong C++ sẽ có các đặc điểm sau:
+	 Một class bao gồm các thành phần dữ liệu (thuộc tính hay property) và các 
+	phương thức (hàm thành phần hay method).
+	 Class thực chất là một kiểu dữ liệu do người lập trình định nghĩa.
+	 Trong C++, từ khóa class sẽ chỉ điểm bắt đầu của một class sẽ được cài đặt.
+
 			#include <iostream>
 			using namespace std;
 			class SinhVien{
@@ -219,6 +226,32 @@ STRUCT và UNION là kiểu dữ liệu người dùng tự định nghĩa
 				SinhVien sv, sv2; // Class SinhVen, object la sv và sv 2, có địa chỉ khác nhau, object chi truy cap den pham vi trong public.
 				return 0;
 			}
-	
+
+## Đặc tính của lập trình hướng đối tượng
+Có 4 đặc tính quan trọng của lập trình hướng đối tượng trong C++ mà chúng ta cần 
+nắm vững sau đây.
+	-> Inheritance (Tính kế thừa ) trong lập trình hướng đối tượng có ý nghĩa, một class 
+có thể kế thừa các thuộc tính của một class khác đã tồn tại trước đó.
+	Khi một class con được tạo ra bởi việc kế thừa thuộc tính của class cha thì chúng ta 
+sẽ gọi class con đó là subclass trong C++, và class cha chính là superclass trong 
+C++.
+	-> Abstraction (Tính trừu tượng) trong lập trình hướng đối tượng là một khả năng 
+mà chương trình có thể bỏ qua sự phức tạp bằng cách tập trung vào cốt lõi của thông 
+tin cần xử lý.
+Điều đó có nghĩa, bạn có thể xử lý một đối tượng bằng cách gọi tên một phương 
+thức và thu về kết quả xử lý, mà không cần biết làm cách nào đối tượng đó được các 
+thao tác trong class.
+ 
+	-> Polymorphism (Tính đa hình) trong lập trình hướng đối tượng là một khả năng mà 
+một phương thức trong class có thể đưa ra các kết quả hoàn toàn khác nhau, tùy 
+thuộc vào dữ liệu được xử lý.
+
+	-> Encapsulation (Tính đóng gói) trong lập trình hướng đối tượng có ý nghĩa không 
+cho phép người sử dụng các đối tượng thay đổi trạng thái nội tại của một đối tượng, 
+mà chỉ có phương thức nội tại của đối tượng có thể thay đổi chính nó.
+Điều đó có nghĩa, dữ liệu và thông tin sẽ được đóng gói lại, giúp các tác động bên 
+ngoài một đối tượng không thể làm thay đổi đối tượng đó, nên sẽ đảm bảo tính toàn 
+vẹn của đối tượng, cũng như giúp dấu đi các dữ liệu thông tin cần được che giấu.
+
 
 
