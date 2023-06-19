@@ -253,5 +253,23 @@ mà chỉ có phương thức nội tại của đối tượng có thể thay �
 ngoài một đối tượng không thể làm thay đổi đối tượng đó, nên sẽ đảm bảo tính toàn 
 vẹn của đối tượng, cũng như giúp dấu đi các dữ liệu thông tin cần được che giấu.
 
-
+## Namespace là gì?
+	Tình huống:
+	Khi đang lập trình trong một file A bạn include 2 file B và C, nhưng 2 file này có 
+cùng định nghĩa một hàm function() giống nhau về tên và tham số truyền vào, nhưng 
+xử lý của mỗi hàm ở mỗi file là khác nhau, vấn đề đặt ra là code làm sao để trình 
+biên dịch hiểu được khi nào bạn muốn gọi function của file B, khi nào bạn muốn gọi 
+function của file C. Khi gọi hàm function() ở file A, trình biên dịch sẽ không biết 
+được hàm function() bạn muốn gọi là hàm được định nghĩa ở file B hay file C. Vì 
+vậy trình biên dịch chương trình sẽ báo lỗi.
+	Định nghĩa:
+	Namespace là từ khóa trong C++ được sử dụng để định nghĩa một phạm vi nhằm 
+mục đích phân biệt các hàm, lớp, biến, ... cùng tên trong các thư viện khác nhau.
+## Template trong C++ là gì?
+	 Template (khuôn mẫu) là một từ khóa trong C++, và là một kiểu dữ liệu trừu 
+tượng tổng quát hóa cho các kiểu dữ liệu int, float, double, bool...
+	 Template trong C++ có 2 loại đó là function template & class template.
+	 Template giúp người lập trình định nghĩa tổng quát cho hàm và lớp thay vì 
+phải nạp chồng (overloading) cho từng hàm hay phương thức với những kiểu 
+dữ liệu khác nhau.
 
