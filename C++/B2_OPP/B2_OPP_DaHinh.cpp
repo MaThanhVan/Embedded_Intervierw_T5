@@ -29,7 +29,7 @@ void ToanHoc::tong(int a, double b)
 }
 
 /*
-        Khi code các hàm tương tư nhau, nhưng khác input parameter ta se dùng template
+        Khi code các hàm tương tư nhau, có fom giống nhau nhưng khác kiểu input đầu vào.
 */
 //template<typename var>
 template<typename var, typename varB>

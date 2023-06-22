@@ -2,6 +2,7 @@
 using namespace std;
 /*
 Tinh Đóng gói: property phải khai báo vào trong private, khi lấy giá trị ra phải thông qua method
+Hàm ảo là 
 */
 class SinhVien{
    // private:		//chỉ có class truy cập đến các member trong private
@@ -40,7 +41,7 @@ class DOITUONG : public SinhVien    //DOITUONG kế thừa public của class si
         int MSSV;
     public:
         void Nhap(string ten, int tuoi, int lop, int mssv);
-        void hienThi();     // Sử dụng tính ghi đè, phải code lại
+        void hienThi();     // Sử dụng tính ghi đè, phải code lại (Hàm ảo)
 };
 
 void DOITUONG::Nhap(string ten, int tuoi, int lop, int mssv)
