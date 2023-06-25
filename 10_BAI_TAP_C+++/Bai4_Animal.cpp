@@ -47,24 +47,60 @@ uint8_t Animal::getHight(){
     return this->Height;
 }
 
+float Animal::BMI(){
+    return Weight / (pow((Height),2));
+}
+
 class compareAnimal
 {
 private:
-    /* data */
+    Animal animalA;
+    Animal animalB;
     
 public:
-    compareAnimal(uint8_t AnimalA, uint8_t AnimalB);
+    compareAnimal(Animal animalA, Animal animalB);
+    void compareAge();
+    void compareWeight();
 };
 
-Bai4_Animal::Bai4_Animal(/* args */)
-{
+compareAnimal::compareAnimal(Animal animalA, Animal animalB){
+    this->animalA = animalA;
+    this->animalB = animalB;
 }
 
-Bai4_Animal::~Bai4_Animal()
-{
+void compareAnimal::compareAge(){
+    if(animalA.getAge() == animalB.getAge()){
+        printf("\nanimalA and animalB have age age the same is %s", animalA.getAge());
+    }
+    else if(animalA.getAge() > animalB.getAge()){
+        printf("\nanimalA have age %s is larger than animalB have age is %s", animalA.getAge(), animalB.getAge());
+    }
+    else {
+        printf("\nanimalA have age %s is lighter than animalB have age is %s", animalA.getAge(), animalB.getAge());
+    }
 }
 
+void compareAnimal::compareWeight(){
+    if(animalA.getWeight() == animalB.getWeight()){
+        printf("\nanimalA and animalB have weight weight the same is %s", animalA.getWeight());
+    }
+    else if(animalA.getAge() > animalB.getAge()){
+        printf("\nanimalA have weight %s is larger than animalB have weight is %s", animalA.getWeight(), animalB.getWeight());
+    }
+    else {
+        printf("\nanimalA have weight %s is lighter than animalB have weight is %s", animalA.getWeight(), animalB.getWeight());
+    }
+}
 
 
 
 int main(int argc, char const *argv[])
+{
+    Animal AnimalA("chicken", 3, 1, 3), AnimalB("duck", 3, 2, 3);
+    printf("BMI AnimalA is %.2f,  BMI Animalb is %.2f", AnimalA.BMI(), AnimalB.BMI());
+
+    compareAnimal typesAnimal(AnimalA, AnimalB);
+    typesAnimal.compareAge();
+    typesAnimal.compareWeight();
+    return 0;
+}
