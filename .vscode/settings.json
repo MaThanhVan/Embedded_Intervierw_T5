@@ -7,7 +7,8 @@
         "limits": "c",
         "memory": "c",
         "iostream": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "istream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
