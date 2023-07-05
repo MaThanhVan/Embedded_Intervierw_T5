@@ -513,6 +513,7 @@ void Menu::XoaSinhVienBoiID(){
         if(item.getID()  == id_sv){
             sinhvien.erase(sinhvien.begin() + id_sv);
             cout << "Sinh vien co ID = " << id_sv << "da duoc xoa" << endl;
+            break;
         }
         else{
             cout << "Khong tim thay SInh Vien co Id " << id_sv << endl;  
