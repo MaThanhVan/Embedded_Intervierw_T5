@@ -194,6 +194,14 @@ Manager::Manager(){
     }
 }
 
+void Manager::AddTable(){
+
+}
+
+void Manager::FixTheDish(){
+    
+}
+
 list<Dish> Manager::getData(){
     return this->Data;
 }
