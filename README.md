@@ -50,7 +50,10 @@
 ### **Macro**
    - Được xử lý bởi preprocessor(Tiền xử lý)
    - Macro thường được dùng để thay thế các đoạn code có tính lặp lại nhiều lần trong chương trình.
-   - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack counter và propram counter trỏ đến chương trình, Hàm Macro sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
+   - Size của file chương trình chứa macro sẽ lớn hơn function nhưng tốc độ chương trình chạy sẽ nhanh hơn vì nó sẽ chạy theo quy luật chỉ dán CT đó vào không có CT con. 
+   - Hàm Funtion sẽ dùng stack pointer và propram counter trỏ đến chương trình con, Hàm Macro sẽ đưa code vào luôn.
+
+![image](image-2.png)
 
 	#define SUM(a, b) a+b
 	int main()
@@ -70,13 +73,19 @@
 	}*/
 	
 ## **inline** 
-- Size của file chương trình chứa **inline** sẽ lớn hơn các chương trình khác nhưng tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack pointer và propram couter trỏ đến chương trình.
--  Hàm **inline** sẽ Build chương trình thành mã máy và dán chương trình vào đúng vị trí hàm sử dụng.
+- Size của file chương trình chứa **inline** sẽ lớn hơn các chương trình khác và tốc độ chương trình sẽ nhanh hơn. Bới vì Hàm Bình thường sử dụng một địa chỉ cố định và dùng stack pointer và propram couter trỏ đến chương trình con.
+-  Hàm **inline** sẽ Build chương trình thành mã máy(máy tính đã hiểu) và dán đoạn chương trình vào đúng vị trí hàm sử dụng.
+- Macro là định nghĩa thay thế vào vị trí vào rồi mới diễn ra các bước build thành mã máy, inline là build thành mã máy rồi mới đưa vào CT.
 
 
 	inline void test(int a, int b){
 		return a+b;
 	}//0xc4 0xc5 mã máy, vdk sẽ hiểu
+
+	static inline int sum_inline(int a, int b) {
+    return a + b;	
+	}
+	
 	int main()
 	{
 		test(3, 4);//0xc4 0xc5 dán vào vị trí chương trình sử dụng
@@ -272,4 +281,35 @@ tượng tổng quát hóa cho các kiểu dữ liệu int, float, double, bool.
 	- Template giúp người lập trình định nghĩa tổng quát cho hàm và lớp thay vì 
 phải nạp chồng (overloading) cho từng hàm hay phương thức với những kiểu 
 dữ liệu khác nhau.
+
+</details>
+<details>
+  <summary><h2>▶B7 Embedded</h2></summary>
+  
+## Giao thức SPI
+Giao thức SPI
+SPI (Serial Peripheral Interface) là một chuẩn truyền thông nối tiếp tốc độ cao do Motorola đề xuất.
+•	Các bit dữ liệu được truyền nối tiếp nhau và có xung clock đồng bộ.
+•	Giao tiếp song công, có thể truyền và nhận cùng một thời điểm.
+•	Khoảng cách truyền ngắn, được sử dụng để trao đổi dữ liệu với nhau giữa các chip trên cùng một bo mạch.
+•	Tốc độ truyền khoảng vài Mb/s.
+•	Các dòng vi điều khiển thường được tích hợp module giao tiếp SPI dùng để giao tiếp truyền dữ liệu với các vi điều khiển khác, hoặc giao tiếp với các ngoại vi bên ngoài như cảm biến, EEPROM, ADC, LCD, SD Card,…
+Giao tiếp 1 Master với 1 Slave
+Bus SPI gồm có 4 đường tín hiệu:
+•	SCLK: Serial Clock
+•	MOSI: Master Out, Slave In
+•	MISO: Master In, Slave Out
+•	SS: Slave Select
+Cách truyền và nhận dữ liệu
+ 
+•	Mỗi chip Master hay Slave sẽ có một thanh ghi dữ liệu 8 bit chứa dữ liệu cần gửi đi hoặc dữ liệu nhận về.
+•	Cứ mỗi xung nhịp do Master tạo ra trên chân SCLK, một bit trong thanh ghi dữ liệu của Master được truyền qua Slave trên đường MOSI, đồng thời một bit trong thanh ghi dữ liệu của Slave cũng được truyền qua cho Master trên đường MISO.
+Các chế độ hoạt động
+•	Có 4 chế độ truyền nhận khác nhau
+Mode	CPOL	CPHA
+1	0	0
+2	0	1
+3	1	0
+4	1	1
+ 
 
