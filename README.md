@@ -20,7 +20,7 @@
 ## **Phân vùng bộ nhớ trên RAM, cấp phát bộ nhớ động**
 
 - ***Text:*** Quyền truy cập chỉ có thể Read
-	- Chứa khai báo các hằng số(.rodata)
+	- Chứa khai báo các hằng số(.rodata), Các biến con trỏ.
 	- Nó chưa lệnh thực thị nên tránh sửa đổi instruction
 - ***Data:*** Quyền truy cập Read-Write
 	- Chứa biến toàn cục hoặc biến static: Có giá trị khởi tạo khác 0
