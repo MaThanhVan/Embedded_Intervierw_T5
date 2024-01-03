@@ -281,6 +281,18 @@ tượng tổng quát hóa cho các kiểu dữ liệu int, float, double, bool.
 	- Template giúp người lập trình định nghĩa tổng quát cho hàm và lớp thay vì 
 phải nạp chồng (overloading) cho từng hàm hay phương thức với những kiểu 
 dữ liệu khác nhau.
+Template (khuôn mẫu) là một từ khóa trong C++, và là một kiểu dữ liệu trừu tượng tổng quát hóa cho các kiểu dữ liệu int, float, double, bool...
+Template trong C++ có 2 loại đó là function template & class template.
+Template giúp người lập trình định nghĩa tổng quát cho hàm và lớp thay vì phải nạp chồng (overloading) cho từng hàm hay phương thức với những kiểu dữ liệu khác nhau.
+Ví dụ:
+Những hàm có form giống nhau chỉ khác kiểu dữ liệu.
+ int tong(int a, int b);
+ double tong(double a, double b);
+ template<typename var> //thay vì ta code hai hàm riêng để xử lý, thì ta có thể code dùng template chung lại để gọn code hơn.
+ int tong(var a, var b){
+ 	return (var)(a+b);
+ }
+Nếu a và b khác kiểu dữ liệu thì tên var của hai thằng phải khác nhau. Ví dụ var a, var1 b. Lúc này var đại diện cho kiểu dữ liệu a và var1 đại diện cho kiểu dữ liệu b.
 
 </details>
 <details>
